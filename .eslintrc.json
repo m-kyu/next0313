@@ -1,9 +1,3 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./*"]
-    }
-  }
+  "extends": "next/core-web-vitals"
 }
-
