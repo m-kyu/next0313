@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <Script src="https://cdn.jsdelivr.net/npm/chart.js"></Script>
       <body>
         <Main />
         <NextScript />
