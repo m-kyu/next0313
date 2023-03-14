@@ -5,7 +5,7 @@ import Style from "@/styles/sign.module.scss";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import axios from "axios";
-import { MyContext } from "@/context/context";
+import { MyContext } from "@/context/Context";
 
 const Signup = () => {
   const [formStatus, setFormStatus] = useState();
@@ -32,8 +32,8 @@ const Signup = () => {
 
     try {
       const result = await createUser(enteredEmail, enteredPassword);
-      router.replace("/signin");
       setSignnav(true);
+      router.replace("/signin");
     } catch (error) {
       setFormStatus(`Error Occured: ${error.message}`);
     }
